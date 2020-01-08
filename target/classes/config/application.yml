@@ -1,0 +1,20 @@
+# spring
+spring:
+  # profiles
+  profiles:
+    active: local
+# framework
+framework:
+  # swagger
+  swagger:
+    base-package: rohith.rushi.web.controller
+# log
+logging:
+  config: classpath:config/logback-spring.xml
+  level:
+    root: warn
+    rohith.rushi: info
+# mybatis plus
+mybatis-plus:
+  type-aliases-package: rohith.rushi.entity,rohith.rushi.model.*
+  mapper-locations: classpath:mappers/*Mapper.xml
